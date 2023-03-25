@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.cinza {
+  color: #8e8e8e;
+}
+
+.preto {
+  color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-border {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 1px;
+  height: 18px;
+  background: #dbdbdb;
+}
+.nav-container {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 54px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.nav {
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+}
+.feed {
+  margin: 94px 0 0 190px;
+}
+#feed-search {
+  width: 215px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+.nav-items-left {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items-left img {
+  width: 90px;
+}
+
+.nav-items-right {
+  font-size: 22px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.story-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 107%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  height: 118px;
+  box-shadow: 0px 10px 21px rgb(0, 0, 0, 0.25);
+}
+.container-storys {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.storys {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* configuração do  degrade nas imagens*/
+.story-background {
+  width: 70px;
+  background-repeat: no-repeat;
+  background-image: url(../imagens/stories_background_1.svg);
+}
+.storys img {
+  margin: 5px 0 0 5px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.feed {
+  width: 44%;
+}
+
+/* Terminei aqui o  degrade !!*/
+
+.storys p {
+  font-size: 12px;
+}
+
+#seta-left {
+  position: absolute;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #979797;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#seta-left ion-icon {
+  margin-top: 5px;
+}
+
+/* configuração  do  feed*/
+.post {
+  background-color: #ffff;
+  border: 1px solid #dbdbdb;
+  border-left: none;
+  border-right: none;
+  width: 107%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.25);
+}
+
+.post-header {
+  background-color: #ffff;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-header .user {
+  display: flex;
+  align-items: center;
+}
+.post-header .user img {
+  margin-left: 15px;
+  width: 32px;
+  border-radius: 100%;
+}
+
+.post-header .user p {
+  font-size: 14px;
+  color: #262626;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.post-header ion-icon {
+  margin-right: 15px;
+}
+
+.post-body img,
+video {
+  width: 100%;
+}
+.icons-left {
+  margin-left: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 76px;
+  justify-content: space-between;
+}
+.icons-right {
+  margin-right: 20px;
+}
+.post-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 39px;
+}
+
+.post-comment-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-comment-message > p {
+  margin-right: 20px;
+}
+.comment-box {
+  margin: 20px;
+  width: 100%;
+  border: none;
+  outline: 0;
+}
+/*fim da configuração do  feed*/
+
+/* slidbar*/
+
+.slidebar {
+  position: fixed;
+  top: 100px;
+  right: 185px;
+  margin: 32px 0 0 40px;
+  width: 24%;
+}
+
+.slidebar-header {
+  display: flex;
+  align-items: center;
+}
+.slidebar-username {
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 20px;
+}
+
+.slidebar-body-header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slidebar-body-content {
+  margin-top: 20px;
+}
+
+.recomended-users {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomended-username {
+  display: flex;
+}
+
+.username-recomended {
+  margin-left: 10px;
+}
+
+#username-recomended-p1 {
+  font-size: 14px;
+}
+
+#username-recomended-p2 {
+  font-size: 12px;
+}
+#slidebar-folow {
+  margin-top: 5px;
+  color: #139ef2;
+}
+
+.slidbar-footer {
+  margin-top: 30px;
+  font-size: 11px;
+  color: #c7c7c7;
+}
+
+.d-mobile {
+  display: none;
+}
+
+@media (max-width: 1244px) {
+  .feed {
+    margin-left: 150px;
+  }
+
+  .slidebar {
+    right: 110px;
+  }
+}
