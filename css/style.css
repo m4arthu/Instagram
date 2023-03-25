@@ -290,6 +290,7 @@ video {
   display: none;
 }
 
+
 @media (max-width: 1244px) {
   .feed {
     margin-left: 150px;

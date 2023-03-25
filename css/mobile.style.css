@@ -62,4 +62,19 @@
     font-size: 17px;
     align-items: center;
   }
+
+  footer {
+    bottom: 0;
+    height: 54px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #DBDBDB;
+    border-right: none ;
+    border-left: none; 
+  }
 }
