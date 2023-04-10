@@ -83,7 +83,7 @@ a {
   display: flex;
   align-items: center;
   width: 107%;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   background-color: #ffffff;
@@ -91,6 +91,10 @@ a {
   border: 1px solid #dbdbdb;
   height: 118px;
   box-shadow: 0px 10px 21px rgb(0, 0, 0, 0.25);
+}
+
+.story-box::-webkit-scrollbar {
+  display: none;
 }
 .container-storys {
   flex-shrink: 0;
@@ -288,6 +292,14 @@ video {
 
 .d-mobile {
   display: none;
+}
+
+source {
+  position: relative;  
+}
+button {
+  left: 200px;
+  position: absolute;
 }
 
 
